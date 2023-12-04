@@ -15,13 +15,8 @@ const Img = styled.img`
     padding: 0 5rem;
   }
 
-  @media (min-width: 768px) {
-  }
-
-  @media (min-width: 1024px) {
-  }
-
   @media (min-width: 1200px) {
+    padding: 0;
   }
 `;
 

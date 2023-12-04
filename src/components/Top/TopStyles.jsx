@@ -70,15 +70,14 @@ const Container = styled.div`
     padding: 0 5rem;
   }
 
-  @media (min-width: 1024px) {
-  }
-
   @media (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem 5rem;
   }
 `;
 
 const Items = styled.div`
-  width: 420px;
+  width: 100%;
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -93,8 +92,6 @@ const Items = styled.div`
   }
 
   @media (min-width: 300px) {
-    width: 100%;
-
     &:hover {
       scale: 1;
     }
@@ -104,12 +101,6 @@ const Items = styled.div`
     &:hover {
       scale: 1.1;
     }
-  }
-
-  @media (min-width: 1024px) {
-  }
-
-  @media (min-width: 1200px) {
   }
 `;
 

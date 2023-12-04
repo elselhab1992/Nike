@@ -33,13 +33,14 @@ const Heading = styled.div`
     }
   }
 
-  @media (min-width: 768px) {
-  }
-
-  @media (min-width: 1024px) {
-  }
-
   @media (min-width: 1200px) {
+    & > :nth-child(2) {
+      font-size: ${(props) => props.theme.fontSizes.larger};
+    }
+
+    & > :nth-child(3) {
+      font-size: ${(props) => props.theme.fontSizes.larger};
+    }
   }
 `;
 

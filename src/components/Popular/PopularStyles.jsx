@@ -1,28 +1,6 @@
 import styled from "styled-components";
 import ButtonsStyles from "../Buttons/ButtonsStyles";
 
-// const Heading = styled.div`
-//   font-size: ${(props) => props.theme.fontSizes.large};
-//   color: ${(props) => props.theme.colors.secondary};
-//   margin-top: 3rem;
-//   margin-left: 5rem;
-
-//   @media (min-width: 300px) {
-//     font-size: ${(props) => props.theme.fontSizes.medium};
-//     margin-top: 1rem;
-//     margin-left: 1rem;
-//   }
-
-//   @media (min-width: 768px) {
-//   }
-
-//   @media (min-width: 1024px) {
-//   }
-
-//   @media (min-width: 1200px) {
-//   }
-// `;
-
 const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -50,13 +28,10 @@ const Container = styled.div`
     padding: 0.5rem;
   }
 
-  @media (min-width: 768px) {
-  }
-
-  @media (min-width: 1024px) {
-  }
-
   @media (min-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.2rem;
+    padding: 1rem 5rem;
   }
 `;
 

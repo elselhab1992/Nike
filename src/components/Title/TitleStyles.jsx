@@ -16,10 +16,9 @@ const Heading = styled.div`
     margin-left: 5rem;
   }
 
-  @media (min-width: 1024px) {
-  }
-
   @media (min-width: 1200px) {
+    margin-top: 3rem;
+    padding-left: 2.5rem;
   }
 `;
 

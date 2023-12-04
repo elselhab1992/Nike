@@ -1,28 +1,20 @@
 import GlobalStyles from "./GlobalStyles";
 import Theme from "./Theme";
-import {
-  Navbar,
-  Hero,
-  Popular,
-  Hightlight,
-  Top,
-  Featured,
-  Stories,
-  Footer,
-} from "./components";
+import { Navbar } from "./components";
+import { Home, Cart } from "./Pages";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <Theme>
       <GlobalStyles />
-      <Navbar />
-      <Hero />
-      <Popular />
-      <Hightlight />
-      <Top />
-      <Featured />
-      <Stories />
-      <Footer />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
     </Theme>
   );
 }

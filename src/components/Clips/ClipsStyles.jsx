@@ -20,10 +20,9 @@ const Clip = styled.img`
     width: 100px;
   }
 
-  @media (min-width: 1024px) {
-  }
-
   @media (min-width: 1200px) {
+    width: 140px;
+    padding-left: 0;
   }
 `;
 

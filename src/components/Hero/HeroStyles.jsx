@@ -52,18 +52,13 @@ const Container = styled.div`
   margin: auto;
   width: 100%;
 
-  @media (min-width: 300px) {
-  }
-
   @media (min-width: 768px) {
     padding: 0 2rem;
     margin-bottom: 3rem;
   }
 
-  @media (min-width: 1024px) {
-  }
-
   @media (min-width: 1200px) {
+    margin: auto;
   }
 `;
 
@@ -77,6 +72,10 @@ const Videos = styled.div`
 
   @media (min-width: 300px) {
     gap: 0.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    gap: 2rem;
   }
 `;
 
@@ -94,6 +93,10 @@ const ImgDiv = styled.div`
 
   @media (min-width: 1024px) {
     width: 70%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 55%;
   }
 `;
 
@@ -116,10 +119,8 @@ const Img = styled.img`
     width: 500px;
   }
 
-  @media (min-width: 1024px) {
-  }
-
   @media (min-width: 1200px) {
+    width: 700px;
   }
 `;
 
@@ -133,6 +134,10 @@ const Icons = styled.div`
 
   @media (min-width: 300px) {
     margin-right: 0.5rem;
+  }
+
+  @media (min-width: 1200px) {
+    margin-right: 3rem;
   }
 `;
 

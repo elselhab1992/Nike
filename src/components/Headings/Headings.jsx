@@ -3,7 +3,7 @@ import { Heading, Info, Button } from "./HeadingsStyles";
 
 const Headings = ({ heading, subheading, moreSubHeading, info, btn }) => {
   return (
-    <>
+    <div>
       <Heading>
         <h2>{heading}</h2>
         <h6>{subheading}</h6>
@@ -13,7 +13,7 @@ const Headings = ({ heading, subheading, moreSubHeading, info, btn }) => {
         <p>{info}</p>
       </Info>
       <Button>{btn}</Button>
-    </>
+    </div>
   );
 };
 

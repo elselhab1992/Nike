@@ -20,12 +20,7 @@ const Header = styled.header`
   }
 
   @media (min-width: 768px) {
-  }
-
-  @media (min-width: 1024px) {
-  }
-
-  @media (min-width: 1200px) {
+    padding: 2rem 5rem;
   }
 `;
 
