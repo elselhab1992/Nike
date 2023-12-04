@@ -8,6 +8,8 @@ const Footers = styled.footer`
   );
   color: ${(props) => props.theme.colors.white};
   margin-top: 2rem;
+  position: sticky;
+  top: 100%;
 
   @media (min-width: 300px) {
     margin-top: 0.5rem;

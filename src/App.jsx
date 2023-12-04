@@ -10,11 +10,11 @@ function App() {
       <GlobalStyles />
       <BrowserRouter>
         <Navbar />
-        <Footer />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </Theme>
   );
