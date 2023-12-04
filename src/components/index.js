@@ -8,6 +8,8 @@ import Title from "./Title/Title";
 import Featured from "./Featured/Featured";
 import Headings from "./Headings/Headings";
 import SideImage from "./SideImage/SideImage";
+import Stories from "./Stories/Stories";
+import Story from "./Story/Story";
 
 export {
   Navbar,
@@ -20,4 +22,6 @@ export {
   Featured,
   Headings,
   SideImage,
+  Stories,
+  Story,
 };

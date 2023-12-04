@@ -6,11 +6,14 @@ const Header = styled.header`
   align-items: center;
   margin: auto;
   padding: 2rem 5rem;
+  width: 100%;
+  height: 70px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
+  background-color: rgb(27, 76, 224);
 `;
 
 const Nav = styled.nav`

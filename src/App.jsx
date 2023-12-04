@@ -1,6 +1,14 @@
 import GlobalStyles from "./GlobalStyles";
 import Theme from "./Theme";
-import { Navbar, Hero, Popular, Hightlight, Top, Featured } from "./components";
+import {
+  Navbar,
+  Hero,
+  Popular,
+  Hightlight,
+  Top,
+  Featured,
+  Stories,
+} from "./components";
 
 function App() {
   return (
@@ -12,6 +20,7 @@ function App() {
       <Hightlight />
       <Top />
       <Featured />
+      <Stories />
     </Theme>
   );
 }
