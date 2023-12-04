@@ -28,6 +28,9 @@ const Container = styled.div`
   @media (min-width: 300px) {
     padding: 0.5rem;
   }
+
+  @media (min-width: 768px) {
+  }
 `;
 
 const Content = styled.div`
@@ -40,6 +43,8 @@ const Content = styled.div`
   }
 
   @media (min-width: 768px) {
+    padding: 1rem 5rem;
+    text-align: center;
   }
 
   @media (min-width: 1024px) {

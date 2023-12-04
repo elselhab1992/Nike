@@ -81,6 +81,13 @@ const Items = styled.div`
   }
 
   @media (min-width: 768px) {
+    width: 90%;
+    height: 160px;
+    margin: auto;
+
+    &:hover {
+      scale: 1.1;
+    }
   }
 
   @media (min-width: 1024px) {
@@ -106,6 +113,7 @@ const Imgs = styled.img`
   }
 
   @media (min-width: 768px) {
+    width: 250px;
   }
 
   @media (min-width: 1024px) {
@@ -124,6 +132,7 @@ const ItemsInfo = styled.div`
   }
 
   @media (min-width: 768px) {
+    font-size: ${(props) => props.theme.fontSizes.medium};
   }
 
   @media (min-width: 1024px) {
@@ -141,6 +150,7 @@ const ItemsTitle = styled.h4`
   }
 
   @media (min-width: 768px) {
+    font-size: ${(props) => props.theme.fontSizes.medium};
   }
 
   @media (min-width: 1024px) {

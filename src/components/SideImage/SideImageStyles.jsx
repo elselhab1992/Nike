@@ -12,7 +12,7 @@ const Img = styled.img`
   }
 
   @media (min-width: 300px) {
-    width: 100%;
+    padding: 0 5rem;
   }
 
   @media (min-width: 768px) {

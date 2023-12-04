@@ -4,12 +4,14 @@ const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
+  margin: auto;
   padding: 2rem 5rem;
   width: 100%;
   height: 70px;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 2;
   background-color: rgb(27, 76, 224);
 

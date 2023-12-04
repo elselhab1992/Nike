@@ -13,6 +13,7 @@ const Heading = styled.div`
   }
 
   @media (min-width: 768px) {
+    margin-left: 5rem;
   }
 
   @media (min-width: 1024px) {

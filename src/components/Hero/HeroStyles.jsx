@@ -56,6 +56,8 @@ const Container = styled.div`
   }
 
   @media (min-width: 768px) {
+    padding: 0 2rem;
+    margin-bottom: 3rem;
   }
 
   @media (min-width: 1024px) {
@@ -85,6 +87,14 @@ const ImgDiv = styled.div`
   @media (min-width: 300px) {
     width: 100%;
   }
+
+  @media (min-width: 768px) {
+    width: 90%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 70%;
+  }
 `;
 
 const Img = styled.img`
@@ -103,6 +113,7 @@ const Img = styled.img`
   }
 
   @media (min-width: 768px) {
+    width: 500px;
   }
 
   @media (min-width: 1024px) {
