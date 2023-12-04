@@ -1,18 +1,17 @@
 import GlobalStyles from "./GlobalStyles";
 import Theme from "./Theme";
-import { Navbar, Hero, Popular, Hightlight, Top } from "./components";
+import { Navbar, Hero, Popular, Hightlight, Top, Featured } from "./components";
 
 function App() {
   return (
     <Theme>
-      <div>
-        <GlobalStyles />
-        <Navbar />
-        <Hero />
-        <Popular />
-        <Hightlight />
-        <Top />
-      </div>
+      <GlobalStyles />
+      <Navbar />
+      <Hero />
+      <Popular />
+      <Hightlight />
+      <Top />
+      <Featured />
     </Theme>
   );
 }

@@ -5,5 +5,19 @@ import Popular from "./Popular/Popular";
 import Hightlight from "./Hightlight/Hightlight";
 import Top from "./Top/Top";
 import Title from "./Title/Title";
+import Featured from "./Featured/Featured";
+import Headings from "./Headings/Headings";
+import SideImage from "./SideImage/SideImage";
 
-export { Navbar, Hero, Buttons, Popular, Hightlight, Top, Title };
+export {
+  Navbar,
+  Hero,
+  Buttons,
+  Popular,
+  Hightlight,
+  Top,
+  Title,
+  Featured,
+  Headings,
+  SideImage,
+};

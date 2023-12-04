@@ -1,5 +1,6 @@
-import img from "../../assets/hightlightimg.png";
-import { Container, Heading, Info, Button, Img } from "./HightlightStyles";
+import shoes from "../../assets/hightlightimg.png";
+import { Container } from "./HightlightStyles";
+import { Headings, SideImage } from "../index";
 
 const Hightlight = () => {
   return (
@@ -7,24 +8,21 @@ const Hightlight = () => {
       <Container>
         {/* left */}
         <div>
-          <Img src={img} alt="shoes" width={550} />
+          <SideImage img={shoes} />
         </div>
         {/* right */}
         <div>
-          <Heading>
-            <h2>HIGHLIGHTS</h2>
-            <h6>
-              NIKE AIR WITH
-              <br /> LIMITLESS CHOICES
-            </h6>
-          </Heading>
-          <Info>
-            Our Purpose is to move the world forward. We take action by
-            <br /> building community, protecting our planet and increasing
-            <br />
-            access to sport.
-          </Info>
-          <Button>Explore More</Button>
+          <Headings
+            heading="HIGHLIGHTS"
+            subheading=" NIKE AIR WITH
+             "
+            moreSubHeading="LIMITLESS CHOICES"
+            info="Our Purpose is to move the world forward. We take action by
+            "
+            moreInfo="building community, protecting our planet and increasing"
+            infoComplete=" access to sport."
+            btn="Explore More"
+          />
         </div>
       </Container>
     </section>
