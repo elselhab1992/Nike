@@ -15,6 +15,10 @@ const GlobalStyles = createGlobalStyle`
         text-transform: capitalize;
     }
 
+    ul {
+        list-style-type: none;
+    }
+
 `;
 
 export default GlobalStyles;

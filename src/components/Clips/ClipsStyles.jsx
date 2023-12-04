@@ -10,6 +10,18 @@ const Clip = styled.img`
     scale: 1.25;
     cursor: pointer;
   }
+
+  @media (min-width: 300px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1200px) {
+  }
 `;
 
 export { Clip };

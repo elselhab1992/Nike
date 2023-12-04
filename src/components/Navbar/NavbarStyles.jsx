@@ -14,6 +14,18 @@ const Header = styled.header`
   right: 0;
   z-index: 2;
   background-color: rgb(27, 76, 224);
+
+  @media (min-width: 300px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1200px) {
+  }
 `;
 
 const Nav = styled.nav`

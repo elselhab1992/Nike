@@ -29,6 +29,18 @@ const Container = styled.div`
     background-color: ${(props) => props.theme.colors.violet};
     box-shadow: 0px 30px 20px -20px ${(props) => props.theme.colors.violet};
   }
+
+  @media (min-width: 300px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1200px) {
+  }
 `;
 
 const Items = styled.div`

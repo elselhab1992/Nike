@@ -6,6 +6,18 @@ const Section = styled.section``;
 const Container = styled.div`
   border-radius: 10px;
   border: 1px solid #ccc;
+
+  @media (min-width: 300px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1200px) {
+  }
 `;
 
 const Content = styled.div`

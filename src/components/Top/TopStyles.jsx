@@ -57,6 +57,18 @@ const Container = styled.div`
   & > :nth-child(12) {
     background-color: #2f3fa8;
   }
+
+  @media (min-width: 300px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1200px) {
+  }
 `;
 
 const Items = styled.div`

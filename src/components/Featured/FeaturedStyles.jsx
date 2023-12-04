@@ -5,6 +5,18 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 5rem;
+
+  @media (min-width: 300px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1200px) {
+  }
 `;
 
 export { Container };

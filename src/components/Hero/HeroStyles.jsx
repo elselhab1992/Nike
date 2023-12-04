@@ -39,6 +39,18 @@ const Container = styled.div`
   align-items: center;
   margin: auto;
   width: 100%;
+
+  @media (min-width: 300px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1200px) {
+  }
 `;
 
 const Videos = styled.div`

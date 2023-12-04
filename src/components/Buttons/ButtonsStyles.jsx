@@ -14,6 +14,18 @@ const Button = styled.button`
     color: ${(props) => props.theme.colors.white};
     cursor: pointer;
   }
+
+  @media (min-width: 300px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1200px) {
+  }
 `;
 
 export default Button;

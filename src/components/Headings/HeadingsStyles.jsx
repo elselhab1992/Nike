@@ -19,6 +19,18 @@ const Heading = styled.div`
     color: ${(props) => props.theme.colors.secondary};
     font-size: ${(props) => props.theme.fontSizes.larger};
   }
+
+  @media (min-width: 300px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1200px) {
+  }
 `;
 
 const Info = styled.p`

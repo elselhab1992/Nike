@@ -10,6 +10,7 @@ import Headings from "./Headings/Headings";
 import SideImage from "./SideImage/SideImage";
 import Stories from "./Stories/Stories";
 import Story from "./Story/Story";
+import Footer from "./Footer/Footer";
 
 export {
   Navbar,
@@ -24,4 +25,5 @@ export {
   SideImage,
   Stories,
   Story,
+  Footer,
 };

@@ -8,6 +8,7 @@ import {
   Top,
   Featured,
   Stories,
+  Footer,
 } from "./components";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Top />
       <Featured />
       <Stories />
+      <Footer />
     </Theme>
   );
 }
