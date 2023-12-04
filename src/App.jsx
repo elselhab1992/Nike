@@ -1,6 +1,6 @@
 import GlobalStyles from "./GlobalStyles";
 import Theme from "./Theme";
-import { Navbar } from "./components";
+import { Navbar, Footer } from "./components";
 import { Home, Cart } from "./Pages";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -10,9 +10,10 @@ function App() {
       <GlobalStyles />
       <BrowserRouter>
         <Navbar />
+        <Footer />
         <Routes>
-          <Route path="/cart" element={<Cart />} />
           <Route path="/" element={<Home />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </BrowserRouter>
     </Theme>

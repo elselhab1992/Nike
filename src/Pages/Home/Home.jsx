@@ -5,7 +5,6 @@ import {
   Top,
   Featured,
   Stories,
-  Footer,
 } from "../../components/index";
 
 const Home = () => {
@@ -17,7 +16,6 @@ const Home = () => {
       <Top />
       <Featured />
       <Stories />
-      <Footer />
     </>
   );
 };
