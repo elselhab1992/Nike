@@ -1,6 +1,8 @@
-/* eslint-disable no-unused-vars */
+import { useGlobalContext } from "../Context/Context";
+import { IoMdStar } from "react-icons/io";
+import { IoBagCheckSharp } from "react-icons/io5";
+import { Title } from "../index";
 import {
-  Heading,
   Container,
   Items,
   Imgs,
@@ -9,22 +11,18 @@ import {
   Price,
   Prices,
   Ratings,
-  Bag,
   Button,
-} from "./PopularStyles";
-import { useGlobalContext } from "../Context/Context";
-import { IoBagCheckSharp } from "react-icons/io5";
-import { IoMdStar } from "react-icons/io";
-import { Title } from "../index";
+  Bag,
+} from "./TopStyles";
 
-const Popular = () => {
-  const { popular } = useGlobalContext();
+const Top = () => {
+  const { top } = useGlobalContext();
 
   return (
     <section>
-      <Title heading="Popular Sales" />
+      <Title heading="Top Rated Sales" />
       <Container>
-        {popular.items.map((item) => {
+        {top.items.map((item) => {
           const { id, title, text, rating, btn, img, price } = item;
 
           return (
@@ -56,11 +54,11 @@ const Popular = () => {
                   />
                   <Button>{btn}</Button>
                 </Bag>
+                <div>
+                  <Imgs src={img} alt="shoes" />
+                </div>
               </ItemsInfo>
               {/* right */}
-              <div>
-                <Imgs src={img} alt="shoes" />
-              </div>
             </Items>
           );
         })}
@@ -69,31 +67,4 @@ const Popular = () => {
   );
 };
 
-export default Popular;
-
-// import { useGlobalContext } from "../Context/Context";
-// import { Products, Title } from "../index";
-// import { Container, Content } from "./PopularStyles";
-
-// const Popular = () => {
-//   const { popular } = useGlobalContext();
-
-//   return (
-//     <section>
-//       <Title heading="Popular Sales" />
-//       <Container>
-//         {popular.items.map((item) => {
-//           const { id, title, text, rating, btn, img, price } = item;
-
-//           return (
-//             <Content key={id}>
-//               <Products {...item} />
-//             </Content>
-//           );
-//         })}
-//       </Container>
-//     </section>
-//   );
-// };
-
-// export default Popular;
+export default Top;

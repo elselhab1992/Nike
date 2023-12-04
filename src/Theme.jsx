@@ -30,5 +30,3 @@ const theme = {
 export default function Theme({ children }) {
   return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
 }
-
-// background-image: linear-gradient( 0.2deg,  rgba(40, 173, 222,1) 4.8%, rgb(27, 76, 224) 85.5% );

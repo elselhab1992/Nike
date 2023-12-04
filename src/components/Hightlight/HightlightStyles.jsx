@@ -37,6 +37,12 @@ const Button = styled(ButtonsStyles)`
   font-size: ${(props) => props.theme.fontSizes.small};
   padding: 10px;
   border-radius: 5px;
+
+  &:hover {
+    background-color: ${(props) => props.theme.colors.white};
+    color: ${(props) => props.theme.colors.secondary};
+    border: 1px solid ${(props) => props.theme.colors.secondary};
+  }
 `;
 
 const Img = styled.img`

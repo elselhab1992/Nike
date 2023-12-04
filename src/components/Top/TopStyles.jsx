@@ -1,43 +1,74 @@
 import styled from "styled-components";
 import ButtonsStyles from "../Buttons/ButtonsStyles";
 
-const Heading = styled.div`
-  font-size: ${(props) => props.theme.fontSizes.large};
-  color: ${(props) => props.theme.colors.secondary};
-  margin-top: 3rem;
-  margin-left: 5rem;
-`;
-
 const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
   padding: 1rem 5rem;
   margin: auto;
+  justify-content: center;
+  align-items: center;
 
   & > :nth-child(1) {
-    background-color: ${(props) => props.theme.colors.blue};
-    box-shadow: 0px 30px 20px -20px ${(props) => props.theme.colors.blue};
+    background-color: #425af5;
   }
 
   & > :nth-child(2) {
-    background-color: ${(props) => props.theme.colors.red};
-    box-shadow: 0px 30px 20px -20px ${(props) => props.theme.colors.red};
+    background-color: #0da851;
   }
 
   & > :nth-child(3) {
-    background-color: ${(props) => props.theme.colors.violet};
-    box-shadow: 0px 30px 20px -20px ${(props) => props.theme.colors.violet};
+    background-color: #f24949;
+  }
+
+  & > :nth-child(4) {
+    background-color: #cf7a0c;
+  }
+
+  & > :nth-child(5) {
+    background-color: #75480e;
+  }
+
+  & > :nth-child(6) {
+    background-color: #3c93d6;
+  }
+
+  & > :nth-child(7) {
+    background-color: #e3a922;
+  }
+
+  & > :nth-child(8) {
+    background-color: #ad671d;
+  }
+
+  & > :nth-child(9) {
+    background-color: #183da1;
+  }
+
+  & > :nth-child(10) {
+    background-color: #1ac208;
+  }
+
+  & > :nth-child(11) {
+    background-color: #0b0f29;
+  }
+
+  & > :nth-child(12) {
+    background-color: #2f3fa8;
   }
 `;
 
 const Items = styled.div`
-  height: 150px;
+  width: 420px;
+  height: 300px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   border-radius: 1rem;
   transition: 700ms;
+  background-color: red;
 
   &:hover {
     scale: 1.1;
@@ -45,20 +76,20 @@ const Items = styled.div`
 `;
 
 const Imgs = styled.img`
-  width: 250px;
-  padding-right: 0.5rem;
-  transform: rotate(-40deg);
+  width: 230px;
+  transform: rotate(0);
   transition: 700ms;
 
   &:hover {
     cursor: pointer;
-    transform: rotate(-25deg);
+    transform: rotate(-15deg);
   }
 `;
 
 const ItemsInfo = styled.div`
   padding: 1rem;
   color: ${(props) => props.theme.colors.white};
+  text-align: center;
 `;
 
 const ItemsTitle = styled.h4`
@@ -67,7 +98,7 @@ const ItemsTitle = styled.h4`
 
 const Price = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 1.7rem;
   margin: 0.5rem auto;
@@ -89,7 +120,7 @@ const Ratings = styled.p`
 
 const Bag = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
 `;
@@ -99,10 +130,11 @@ const Button = styled(ButtonsStyles)`
   padding: 5px;
   box-shadow: none;
   border-radius: 5px;
+  position: relative;
+  z-index: 1;
 `;
 
 export {
-  Heading,
   Container,
   Items,
   Imgs,

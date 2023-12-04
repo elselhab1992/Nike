@@ -77,7 +77,12 @@ const Icons = styled.div`
 
 const Icon = styled.img`
   width: 30px;
-  cursor: pointer;
+  transition: 700ms;
+
+  &:hover {
+    cursor: pointer;
+    scale: 1.2;
+  }
 `;
 
 export {
