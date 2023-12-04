@@ -7,6 +7,9 @@ const Container = styled.div`
   padding: 1rem 5rem;
 
   @media (min-width: 300px) {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
   }
 
   @media (min-width: 768px) {

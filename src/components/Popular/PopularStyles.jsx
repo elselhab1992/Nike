@@ -1,12 +1,27 @@
 import styled from "styled-components";
 import ButtonsStyles from "../Buttons/ButtonsStyles";
 
-const Heading = styled.div`
-  font-size: ${(props) => props.theme.fontSizes.large};
-  color: ${(props) => props.theme.colors.secondary};
-  margin-top: 3rem;
-  margin-left: 5rem;
-`;
+// const Heading = styled.div`
+//   font-size: ${(props) => props.theme.fontSizes.large};
+//   color: ${(props) => props.theme.colors.secondary};
+//   margin-top: 3rem;
+//   margin-left: 5rem;
+
+//   @media (min-width: 300px) {
+//     font-size: ${(props) => props.theme.fontSizes.medium};
+//     margin-top: 1rem;
+//     margin-left: 1rem;
+//   }
+
+//   @media (min-width: 768px) {
+//   }
+
+//   @media (min-width: 1024px) {
+//   }
+
+//   @media (min-width: 1200px) {
+//   }
+// `;
 
 const Container = styled.div`
   display: grid;
@@ -31,6 +46,8 @@ const Container = styled.div`
   }
 
   @media (min-width: 300px) {
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
   }
 
   @media (min-width: 768px) {
@@ -54,6 +71,23 @@ const Items = styled.div`
   &:hover {
     scale: 1.1;
   }
+
+  @media (min-width: 300px) {
+    height: 140px;
+
+    &:hover {
+      scale: 1;
+    }
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1200px) {
+  }
 `;
 
 const Imgs = styled.img`
@@ -66,15 +100,54 @@ const Imgs = styled.img`
     cursor: pointer;
     transform: rotate(-25deg);
   }
+
+  @media (min-width: 300px) {
+    width: 200px;
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1200px) {
+  }
 `;
 
 const ItemsInfo = styled.div`
   padding: 1rem;
   color: ${(props) => props.theme.colors.white};
+
+  @media (min-width: 300px) {
+    font-size: 13px;
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1200px) {
+  }
 `;
 
 const ItemsTitle = styled.h4`
   font-size: ${(props) => props.theme.fontSizes.medium};
+
+  @media (min-width: 300px) {
+    font-size: 13px;
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1200px) {
+  }
 `;
 
 const Price = styled.div`
@@ -83,6 +156,19 @@ const Price = styled.div`
   align-items: center;
   gap: 1.7rem;
   margin: 0.5rem auto;
+
+  @media (min-width: 300px) {
+    gap: 1rem;
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1200px) {
+  }
 `;
 
 const Prices = styled.p`
@@ -91,6 +177,18 @@ const Prices = styled.p`
   color: ${(props) => props.theme.colors.black};
   padding: 0 5px;
   border-radius: 5px;
+
+  @media (min-width: 300px) {
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1200px) {
+  }
 `;
 
 const Ratings = styled.p`
@@ -114,7 +212,6 @@ const Button = styled(ButtonsStyles)`
 `;
 
 export {
-  Heading,
   Container,
   Items,
   Imgs,

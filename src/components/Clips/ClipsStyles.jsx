@@ -12,6 +12,8 @@ const Clip = styled.img`
   }
 
   @media (min-width: 300px) {
+    width: 80px;
+    padding-left: 0.5rem;
   }
 
   @media (min-width: 768px) {

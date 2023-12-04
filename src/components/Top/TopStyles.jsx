@@ -59,6 +59,9 @@ const Container = styled.div`
   }
 
   @media (min-width: 300px) {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 1rem;
   }
 
   @media (min-width: 768px) {
@@ -84,6 +87,23 @@ const Items = styled.div`
 
   &:hover {
     scale: 1.1;
+  }
+
+  @media (min-width: 300px) {
+    width: 100%;
+
+    &:hover {
+      scale: 1;
+    }
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1200px) {
   }
 `;
 

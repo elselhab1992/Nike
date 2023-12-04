@@ -21,6 +21,16 @@ const Heading = styled.div`
   }
 
   @media (min-width: 300px) {
+    font-size: ${(props) => props.theme.fontSizes.medium};
+    margin-bottom: 1rem;
+
+    & > :nth-child(2) {
+      font-size: ${(props) => props.theme.fontSizes.large};
+    }
+
+    & > :nth-child(3) {
+      font-size: ${(props) => props.theme.fontSizes.large};
+    }
   }
 
   @media (min-width: 768px) {
@@ -33,10 +43,16 @@ const Heading = styled.div`
   }
 `;
 
-const Info = styled.p`
+const Info = styled.div`
   color: ${(props) => props.theme.colors.secondary};
   margin-bottom: 1rem;
   line-height: 0.5;
+
+  @media (min-width: 300px) {
+    line-height: 1;
+    margin-bottom: 0;
+    width: 80%;
+  }
 `;
 
 const Button = styled(ButtonsStyles)`

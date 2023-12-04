@@ -31,7 +31,7 @@ const Hero = () => {
           <Clips />
         </Videos>
         <ImgDiv>
-          <Img src={heroImg} alt="shoes" width={700} />
+          <Img src={heroImg} alt="shoes" />
         </ImgDiv>
         <Icons>
           {hero.sociallinks.map((icons, index) => {

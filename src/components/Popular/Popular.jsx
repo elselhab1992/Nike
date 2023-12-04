@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import {
-  Heading,
   Container,
   Items,
   Imgs,

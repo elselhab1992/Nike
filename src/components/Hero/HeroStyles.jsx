@@ -23,6 +23,18 @@ const Title = styled.h1`
   color: ${(props) => props.theme.colors.white};
   font-size: ${(props) => props.theme.fontSizes.xl};
   font-weight: ${(props) => props.theme.fontWeights.bolder};
+
+  @media (min-width: 300px) {
+    font-size: ${(props) => props.theme.fontSizes.medium};
+  }
+
+  @media (min-width: 768px) {
+    font-size: ${(props) => props.theme.fontSizes.large};
+  }
+
+  @media (min-width: 1200px) {
+    font-size: ${(props) => props.theme.fontSizes.xl};
+  }
 `;
 
 const HeroBtn = styled(ButtonsStyles)`
@@ -60,14 +72,23 @@ const Videos = styled.div`
   align-items: center;
   gap: 2rem;
   margin: auto;
+
+  @media (min-width: 300px) {
+    gap: 0.5rem;
+  }
 `;
 
 const ImgDiv = styled.div`
   width: 55%;
   margin: auto;
+
+  @media (min-width: 300px) {
+    width: 100%;
+  }
 `;
 
 const Img = styled.img`
+  width: 700px;
   margin-top: 2rem;
   transform: rotate(-25deg);
   transition: 700ms;
@@ -75,6 +96,19 @@ const Img = styled.img`
   &:hover {
     cursor: pointer;
     transform: rotate(0);
+  }
+
+  @media (min-width: 300px) {
+    width: 230px;
+  }
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  @media (min-width: 1200px) {
   }
 `;
 
@@ -85,6 +119,10 @@ const Icons = styled.div`
   align-items: center;
   gap: 1.5rem;
   margin-right: 3rem;
+
+  @media (min-width: 300px) {
+    margin-right: 0.5rem;
+  }
 `;
 
 const Icon = styled.img`

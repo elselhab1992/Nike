@@ -9,6 +9,9 @@ const Container = styled.div`
   margin: 2rem auto;
 
   @media (min-width: 300px) {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
   }
 
   @media (min-width: 768px) {

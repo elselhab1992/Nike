@@ -12,6 +12,7 @@ const Img = styled.img`
   }
 
   @media (min-width: 300px) {
+    width: 100%;
   }
 
   @media (min-width: 768px) {

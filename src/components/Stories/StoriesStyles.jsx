@@ -5,6 +5,7 @@ const Container = styled.div`
   position: relative;
 
   @media (min-width: 300px) {
+    padding: 1rem;
   }
 
   @media (min-width: 768px) {

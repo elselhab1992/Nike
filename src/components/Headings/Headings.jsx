@@ -1,16 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Heading, Info, Button } from "./HeadingsStyles";
 
-const Headings = ({
-  heading,
-  subheading,
-  moreSubHeading,
-  info,
-  infoPlus,
-  moreInfo,
-  infoComplete,
-  btn,
-}) => {
+const Headings = ({ heading, subheading, moreSubHeading, info, btn }) => {
   return (
     <>
       <Heading>
@@ -18,10 +9,9 @@ const Headings = ({
         <h6>{subheading}</h6>
         <h6>{moreSubHeading}</h6>
       </Heading>
-      <Info>{info}</Info>
-      <Info>{infoPlus}</Info>
-      <Info>{moreInfo}</Info>
-      <Info>{infoComplete}</Info>
+      <Info>
+        <p>{info}</p>
+      </Info>
       <Button>{btn}</Button>
     </>
   );

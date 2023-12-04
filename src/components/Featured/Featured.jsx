@@ -12,10 +12,7 @@ const Featured = () => {
             heading="FEATURED"
             subheading="NIKE SNEAKERS AIR"
             moreSubHeading="LANCING SHOES"
-            info="The radiance lives on Nike Sneakers Air Lancing Shoes, the"
-            infoPlus="basket ball OG that puts a fresh spin on what you know best:"
-            moreInfo="durably stitched overlays, clean finishes and the perfect"
-            infoComplete="amount of flash to make you shine."
+            info="The radiance lives on Nike Sneakers Air Lancing Shoes, the basket ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine."
             btn="explore more"
           />
         </div>

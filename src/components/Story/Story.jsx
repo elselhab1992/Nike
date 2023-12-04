@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import { FaHeart } from "react-icons/fa";
 import {
-  Section,
   Container,
   Content,
   Img,
@@ -14,7 +13,7 @@ import {
 
 const Story = ({ title, text, img, url, like, time, by, btn }) => {
   return (
-    <Section>
+    <section>
       <Container>
         <Img src={img} alt="shoes" width={400} />
         <Content>
@@ -42,7 +41,7 @@ const Story = ({ title, text, img, url, like, time, by, btn }) => {
           </BtnDiv>
         </Content>
       </Container>
-    </Section>
+    </section>
   );
 };
 

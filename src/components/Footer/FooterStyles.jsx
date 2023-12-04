@@ -8,6 +8,13 @@ const Footers = styled.footer`
   );
   color: ${(props) => props.theme.colors.white};
   margin-top: 2rem;
+
+  @media (min-width: 300px) {
+    margin-top: 0.5rem;
+  }
+
+  @media (min-width: 768px) {
+  }
 `;
 
 const Container = styled.div`
@@ -19,6 +26,17 @@ const Container = styled.div`
   padding: 2rem;
 
   @media (min-width: 300px) {
+    padding: 0.5rem;
+  }
+`;
+
+const Content = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 800px;
+
+  @media (min-width: 300px) {
+    width: 100%;
   }
 
   @media (min-width: 768px) {
@@ -31,15 +49,13 @@ const Container = styled.div`
   }
 `;
 
-const Content = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 800px;
-`;
-
 const Copyright = styled.div`
   margin: 1rem;
   font-size: 15px;
+
+  @media (min-width: 300px) {
+    text-align: center;
+  }
 `;
 
 export { Footers, Container, Content, Copyright };

@@ -17,10 +17,8 @@ const Hightlight = () => {
             subheading=" NIKE AIR WITH
              "
             moreSubHeading="LIMITLESS CHOICES"
-            info="Our Purpose is to move the world forward. We take action by
+            info="Our Purpose is to move the world forward. We take action by building community, protecting our planet and increasing access to sport.
             "
-            moreInfo="building community, protecting our planet and increasing"
-            infoComplete=" access to sport."
             btn="Explore More"
           />
         </div>

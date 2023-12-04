@@ -7,6 +7,9 @@ const Heading = styled.div`
   margin-left: 5rem;
 
   @media (min-width: 300px) {
+    font-size: ${(props) => props.theme.fontSizes.medium};
+    margin-top: 1rem;
+    margin-left: 1rem;
   }
 
   @media (min-width: 768px) {
