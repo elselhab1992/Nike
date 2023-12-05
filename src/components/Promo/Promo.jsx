@@ -5,7 +5,12 @@ const Promo = () => {
     <Container>
       <Heading>have a discount code ?</Heading>
       <Content>
-        <Input type="text" placeholder="Enter code here" />
+        <Input
+          type="text"
+          placeholder="Enter code here"
+          id="promo"
+          name="promo"
+        />
         <Button>Apply Code</Button>
       </Content>
     </Container>
