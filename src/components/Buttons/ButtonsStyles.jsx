@@ -22,8 +22,7 @@ const SecondaryButton = styled(PrimaryButton)`
   color: ${(props) => props.theme.colors.secondary};
 
   &:hover {
-    background-color: ${(props) => props.theme.colors.secondary};
-    color: ${(props) => props.theme.colors.white};
+    box-shadow: 0 0 0 2px ${(props) => props.theme.colors.secondary};
   }
 `;
 
