@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ButtonsStyles from "../Buttons/ButtonsStyles";
+import { PrimaryButton } from "../Buttons/ButtonsStyles";
 
 const Heading = styled.div`
   font-size: ${(props) => props.theme.fontSizes.large};
@@ -56,20 +56,11 @@ const Info = styled.div`
   }
 `;
 
-const Button = styled(ButtonsStyles)`
+const Button = styled(PrimaryButton)`
   width: 150px;
-  background-color: ${(props) => props.theme.colors.secondary};
-  color: ${(props) => props.theme.colors.white};
   font-size: ${(props) => props.theme.fontSizes.small};
-  padding: 10px;
   margin-top: 0.5rem;
   border-radius: 5px;
-
-  &:hover {
-    background-color: ${(props) => props.theme.colors.white};
-    color: ${(props) => props.theme.colors.secondary};
-    border: 1px solid ${(props) => props.theme.colors.secondary};
-  }
 `;
 
 export { Heading, Info, Button };

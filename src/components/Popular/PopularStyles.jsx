@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ButtonsStyles from "../Buttons/ButtonsStyles";
+import { SecondaryButton } from "../Buttons/ButtonsStyles";
 
 const Container = styled.div`
   display: grid;
@@ -189,7 +189,7 @@ const Bag = styled.div`
   gap: 1rem;
 `;
 
-const Button = styled(ButtonsStyles)`
+const Button = styled(SecondaryButton)`
   width: 80px;
   padding: 5px;
   box-shadow: none;

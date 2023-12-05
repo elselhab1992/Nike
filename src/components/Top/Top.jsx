@@ -14,15 +14,16 @@ import {
   Button,
   Bag,
 } from "./TopStyles";
+import { toprateslaes } from "../../data/data";
 
 const Top = () => {
-  const { top } = useGlobalContext();
+  const { addToCart } = useGlobalContext();
 
   return (
     <section>
       <Title heading="Top Rated Sales" />
       <Container>
-        {top.items.map((item) => {
+        {toprateslaes.map((item) => {
           const { id, title, text, rating, btn, img, price } = item;
 
           return (
@@ -51,6 +52,7 @@ const Top = () => {
                       borderRadius: 5,
                       cursor: "pointer",
                     }}
+                    onClick={() => addToCart(id)}
                   />
                   <Button>{btn}</Button>
                 </Bag>

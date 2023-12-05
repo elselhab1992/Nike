@@ -15,15 +15,16 @@ import { useGlobalContext } from "../Context/Context";
 import { IoBagCheckSharp } from "react-icons/io5";
 import { IoMdStar } from "react-icons/io";
 import { Title } from "../index";
+import { popularsales } from "../../data/data";
 
 const Popular = () => {
-  const { popular } = useGlobalContext();
+  const { addToCart } = useGlobalContext();
 
   return (
     <section>
       <Title heading="Popular Sales" />
       <Container>
-        {popular.items.map((item) => {
+        {popularsales.map((item) => {
           const { id, title, text, rating, btn, img, price } = item;
 
           return (
@@ -52,6 +53,7 @@ const Popular = () => {
                       borderRadius: 5,
                       cursor: "pointer",
                     }}
+                    onClick={() => addToCart(id)}
                   />
                   <Button>{btn}</Button>
                 </Bag>
@@ -69,30 +71,3 @@ const Popular = () => {
 };
 
 export default Popular;
-
-// import { useGlobalContext } from "../Context/Context";
-// import { Products, Title } from "../index";
-// import { Container, Content } from "./PopularStyles";
-
-// const Popular = () => {
-//   const { popular } = useGlobalContext();
-
-//   return (
-//     <section>
-//       <Title heading="Popular Sales" />
-//       <Container>
-//         {popular.items.map((item) => {
-//           const { id, title, text, rating, btn, img, price } = item;
-
-//           return (
-//             <Content key={id}>
-//               <Products {...item} />
-//             </Content>
-//           );
-//         })}
-//       </Container>
-//     </section>
-//   );
-// };
-
-// export default Popular;

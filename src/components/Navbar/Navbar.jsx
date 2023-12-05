@@ -1,9 +1,14 @@
 import logo from "../../assets/logo.png";
 import { FaSearch, FaHeart, FaShoppingCart } from "react-icons/fa";
-import { Header, Nav } from "./NavbarStyles";
+import { Header, Nav, Count } from "./NavbarStyles";
 import { Link } from "react-router-dom";
+import { useGlobalContext } from "../Context/Context";
 
 const Navbar = () => {
+  const { getTotalCartItems } = useGlobalContext();
+
+  const totalCartItems = getTotalCartItems();
+
   return (
     <Header>
       <Link to="/">
@@ -36,6 +41,7 @@ const Navbar = () => {
             }}
           />
         </Link>
+        <Count>{totalCartItems}</Count>
       </Nav>
     </Header>
   );

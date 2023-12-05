@@ -1,21 +1,19 @@
-import { useGlobalContext } from "../Context/Context";
+import { footerAPI } from "../../data/data";
 import { Footers, Container, Content, Copyright } from "./FooterStyles";
 
 const Footer = () => {
-  const { footerInfo } = useGlobalContext();
-
   return (
     <Footers>
       <Container>
         <Content>
-          {footerInfo.titles.map((title, index) => {
+          {footerAPI.titles.map((title, index) => {
             return (
               <div key={index}>
                 <h4>{title.title}</h4>
               </div>
             );
           })}
-          {footerInfo.links.map((list, index) => {
+          {footerAPI.links.map((list, index) => {
             return (
               <ul key={index}>
                 {list.map((link, index) => {

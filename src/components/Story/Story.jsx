@@ -32,7 +32,7 @@ const Story = ({ title, text, img, url, like, time, by, btn }) => {
           </Info>
           <h4>{title}</h4>
           <Text>
-            {text.length > 200 ? text.substring(0, 160) + "..." : text}
+            {text.length > 150 ? text.substring(0, 120) + "..." : text}
           </Text>
           <BtnDiv>
             <a href={url} target="_blank" rel="noreferrer">

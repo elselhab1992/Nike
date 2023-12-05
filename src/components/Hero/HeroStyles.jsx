@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ButtonsStyles from "../Buttons/ButtonsStyles";
+import { SecondaryButton } from "../Buttons/ButtonsStyles";
 
 const HeroSection = styled.section`
   background-image: linear-gradient(
@@ -37,7 +37,7 @@ const Title = styled.h1`
   }
 `;
 
-const HeroBtn = styled(ButtonsStyles)`
+const HeroBtn = styled(SecondaryButton)`
   width: 180px;
   font-weight: 600;
   font-size: 16px;

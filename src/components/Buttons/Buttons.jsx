@@ -1,8 +1,12 @@
 /* eslint-disable react/prop-types */
-import Button from "./ButtonsStyles";
+import { PrimaryButton, SecondaryButton } from "./ButtonsStyles";
 
 const Buttons = ({ children }) => {
-  return <Button>{children}</Button>;
+  return <PrimaryButton>{children}</PrimaryButton>;
 };
 
-export default Buttons;
+const SecondaryButtons = ({ children }) => {
+  return <SecondaryButton>{children}</SecondaryButton>;
+};
+
+export { Buttons, SecondaryButtons };

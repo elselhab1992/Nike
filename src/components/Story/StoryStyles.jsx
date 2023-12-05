@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ButtonsStyles from "../Buttons/ButtonsStyles";
+import { PrimaryButton } from "../Buttons/ButtonsStyles";
 
 const Container = styled.div`
   border-radius: 10px;
@@ -43,19 +43,11 @@ const BtnDiv = styled.div`
   text-align: center;
 `;
 
-const Button = styled(ButtonsStyles)`
+const Button = styled(PrimaryButton)`
   width: 100%;
-  color: ${(props) => props.theme.colors.white};
-  background-color: ${(props) => props.theme.colors.black};
   font-size: ${(props) => props.theme.fontSizes.small};
   margin-top: 1rem;
   transition: 700ms;
-
-  &:hover {
-    color: ${(props) => props.theme.colors.black};
-    background-color: ${(props) => props.theme.colors.white};
-    border: 1px solid ${(props) => props.theme.colors.black};
-  }
 `;
 
 export { Container, Content, Img, Info, Heart, Text, BtnDiv, Button };

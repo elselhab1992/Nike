@@ -1,31 +1,30 @@
 import styled from "styled-components";
 
-const Button = styled.button`
+const PrimaryButton = styled.button`
   width: 150px;
-  background-color: ${(props) => props.theme.colors.white};
-  color: ${(props) => props.theme.colors.black};
+  background-color: ${(props) => props.theme.colors.secondary};
+  color: ${(props) => props.theme.colors.white};
   padding: 10px;
   border-radius: 10px;
   border: 0;
-  transition: 0.7s;
+  transition: 700ms;
 
   &:hover {
-    background-color: ${(props) => props.theme.colors.black};
-    color: ${(props) => props.theme.colors.white};
+    background-color: ${(props) => props.theme.colors.white};
+    color: ${(props) => props.theme.colors.secondary};
     cursor: pointer;
-  }
-
-  @media (min-width: 300px) {
-  }
-
-  @media (min-width: 768px) {
-  }
-
-  @media (min-width: 1024px) {
-  }
-
-  @media (min-width: 1200px) {
+    box-shadow: 0 0 0 2px ${(props) => props.theme.colors.secondary};
   }
 `;
 
-export default Button;
+const SecondaryButton = styled(PrimaryButton)`
+  background-color: ${(props) => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.secondary};
+
+  &:hover {
+    background-color: ${(props) => props.theme.colors.secondary};
+    color: ${(props) => props.theme.colors.white};
+  }
+`;
+
+export { PrimaryButton, SecondaryButton };

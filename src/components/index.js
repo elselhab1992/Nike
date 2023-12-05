@@ -1,6 +1,6 @@
 import Navbar from "./Navbar/Navbar";
 import Hero from "./Hero/Hero";
-import Buttons from "./Buttons/Buttons";
+import { Buttons, SecondaryButtons } from "./Buttons/Buttons";
 import Popular from "./Popular/Popular";
 import Hightlight from "./Hightlight/Hightlight";
 import Top from "./Top/Top";
@@ -11,11 +11,16 @@ import SideImage from "./SideImage/SideImage";
 import Stories from "./Stories/Stories";
 import Story from "./Story/Story";
 import Footer from "./Footer/Footer";
+import CartItem from "./CartItem/CartItem";
+import SubTotal from "./SubTotal/SubTotal";
+import EmptyCart from "./EmptyCart/EmptyCart";
+import Promo from "./Promo/Promo";
 
 export {
   Navbar,
   Hero,
   Buttons,
+  SecondaryButtons,
   Popular,
   Hightlight,
   Top,
@@ -26,4 +31,8 @@ export {
   Stories,
   Story,
   Footer,
+  CartItem,
+  SubTotal,
+  EmptyCart,
+  Promo,
 };

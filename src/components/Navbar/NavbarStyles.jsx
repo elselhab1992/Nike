@@ -28,6 +28,21 @@ const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 `;
 
-export { Header, Nav };
+const Count = styled.div`
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: red;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -35px;
+  margin-left: -10px;
+`;
+
+export { Header, Nav, Count };

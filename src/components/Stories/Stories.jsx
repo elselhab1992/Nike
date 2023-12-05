@@ -1,27 +1,25 @@
 /* eslint-disable no-unused-vars */
 import { Title, Story } from "../index";
-import { useGlobalContext } from "../Context/Context";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import { sliderSettings } from "../../constants/slider";
 import { Container, SliderArrows } from "./StoriesStyles";
 import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
+import { info } from "../../data/data";
 
 const Stories = () => {
-  const { stories } = useGlobalContext();
-
   return (
     <section>
       <Title heading="Top Stories" />
       <Container>
         <Swiper {...sliderSettings}>
           <SliderButtons />
-          {stories.news.map((story) => {
-            const { id, title, text, img, url, like, time, by, btn } = story;
+          {info.map((item) => {
+            const { id, title, text, img, url, like, time, by, btn } = item;
 
             return (
               <SwiperSlide key={id}>
-                <Story {...story} />
+                <Story {...item} />
               </SwiperSlide>
             );
           })}
